@@ -25,7 +25,5 @@ public abstract class WheelsTransport {
         this.wheelsCount = wheelsCount;
     }
 
-    public void updateTyre() {
-        System.out.println("Меняем покрышку");
-    }
+
 }
