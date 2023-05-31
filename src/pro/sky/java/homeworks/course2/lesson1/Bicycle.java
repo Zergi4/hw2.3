@@ -1,11 +1,10 @@
 package pro.sky.java.homeworks.course2.lesson1;
 
-public class Bicycle {
-    public String modelName;
-    public int wheelsCount;
+import pro.sky.java.homeworks.course2.lesson1.WheelsTransport;
 
-    public void updateTyre() {
-        System.out.println("Меняем покрышку");
-
+public class Bicycle extends  WheelsTransport{
+    public Bicycle(String modelName, int wheelsCount) {
+        super(modelName, wheelsCount);
     }
+    
 }
