@@ -1,6 +1,6 @@
 package pro.sky.java.homeworks.course2.lesson1;
 
-import pro.sky.java.homeworks.course2.lesson1.WheelsTransport;
+
 
 public class Truck extends WheelsTransport implements Repair{
     public Truck(String modelName, int wheelsCount) {
@@ -9,12 +9,13 @@ public class Truck extends WheelsTransport implements Repair{
 
     @Override
     public void check() {
-        System.out.println("Обслуживаем " + this.getModelName());
+        serviceVehicle();
         for (int i = 0; i < this.getWheelsCount(); i++) {
            updateTyre();
         }
         checkEngine();
         checkTrailer();
+        System.out.println();
     }
     public void updateTyre() {
         System.out.println("Меняем покрышку");
@@ -26,5 +27,8 @@ public class Truck extends WheelsTransport implements Repair{
 
     public void checkTrailer() {
         System.out.println("Проверяем прицеп");
+    }
+    public void serviceVehicle(){
+        System.out.println("Обслуживаем автомобиль " + this.getModelName());
     }
 }
