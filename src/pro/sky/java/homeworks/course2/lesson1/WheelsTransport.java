@@ -24,6 +24,22 @@ public abstract class WheelsTransport {
     public void setWheelsCount(int wheelsCount) {
         this.wheelsCount = wheelsCount;
     }
+    public void updateTyre() {
+        System.out.println("Меняем покрышку");
+    }
 
+    public void checkEngine() {
+        System.out.println("Проверяем двигатель");
+    }
+
+    public void checkTrailer() {
+        System.out.println("Проверяем прицеп");
+    }
+    public void serviceVehicle(){
+        System.out.println("Обслуживаем автомобиль " + this.getModelName());
+    }
+    public void serviceBicycle(){
+        System.out.println("Обслуживаем велосипед " + this.getModelName());
+    }
 
 }

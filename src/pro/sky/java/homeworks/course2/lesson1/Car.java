@@ -16,15 +16,5 @@ public class Car extends WheelsTransport implements Repair {
         checkEngine();
         System.out.println();
     }
-    public void updateTyre() {
-        System.out.println("Меняем покрышку");
-    }
 
-    public void checkEngine() {
-        System.out.println("Проверяем двигатель");
-    }
-
-       public void serviceVehicle(){
-        System.out.println("Обслуживаем автомобиль " + this.getModelName());
-    }
 }

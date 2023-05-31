@@ -17,18 +17,5 @@ public class Truck extends WheelsTransport implements Repair{
         checkTrailer();
         System.out.println();
     }
-    public void updateTyre() {
-        System.out.println("Меняем покрышку");
-    }
 
-    public void checkEngine() {
-        System.out.println("Проверяем двигатель");
-    }
-
-    public void checkTrailer() {
-        System.out.println("Проверяем прицеп");
-    }
-    public void serviceVehicle(){
-        System.out.println("Обслуживаем автомобиль " + this.getModelName());
-    }
 }
